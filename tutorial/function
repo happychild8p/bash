@@ -1,0 +1,16 @@
+#!/usr/bin/bash
+
+getSum() {
+	local num1=$1
+	local num2=$2
+
+	local sum=$((num1+num2))
+
+	echo "Sum for $num1 and $num2 is $sum"
+}
+
+numb1=5
+numb2=6
+
+sum=$(getSum numb1 numb2)
+echo $sum

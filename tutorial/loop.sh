@@ -1,0 +1,25 @@
+#!/usr/bin/bash
+
+num=1
+
+while [ "$num" -le "10" ]; do
+				echo $num
+				let num++
+				num=$num
+done
+
+num=1
+
+while [ $num -le 20 ]; do
+				if (( ((num % 2)) == 0 )); then
+								num=$((num + 1))
+								continue
+				fi
+				if [ $num -ge 17 ]; then
+								break
+				fi
+
+				echo $num
+				num=$((num + 1))
+done
+
