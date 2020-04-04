@@ -1,2 +1,2 @@
 #!/usr/bin/bash
-uniq -c | cut -c 7-
+uniq -ci | cut -c 7-
