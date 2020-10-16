@@ -16,3 +16,9 @@ find . -size 1033c | cat './inhere/maybehere07/.file2'
 #level6
 find  / -user bandit7 -group bandit6 -size 33c 2> /dev/null
 cat /var/lib/dpkg/info/bandit7.password
+#level7
+cat data.txt | grep millionth
+#level8
+cat data.txt | sort | uniq -u
+#level9
+strings data.txt | grep "==.*"
