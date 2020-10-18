@@ -22,3 +22,7 @@ cat data.txt | grep millionth
 cat data.txt | sort | uniq -u
 #level9
 strings data.txt | grep "==.*"
+#level10
+base64 -d data.txt
+#level11
+cat data.txt | tr '[a-zA-Z]' '[n-za-mN-ZA-M]'
